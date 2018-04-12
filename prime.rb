@@ -1,12 +1,9 @@
 # Add  code here!
 require 'pry'
 def prime?(numbers)
-  prime_number=[]
-  numbers = (-1..110000).to_a
-  if numbers == "(#{numbers} - 1 / #{numbers})"
-    true
+  if numbers < 2 || (2..numbers).to_a.any? {|i| number % i == 0}
+    return false
   else
-    false
-    binding.pry
+    return true
   end
 end
