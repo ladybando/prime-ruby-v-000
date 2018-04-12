@@ -4,6 +4,6 @@ def prime?(numbers)
   if numbers > 2 || (-1..numbers).to_a.any? {|i| numbers % i == 0}
     return false
   else
-    return false
+    return true
   end
 end
