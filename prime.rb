@@ -2,7 +2,7 @@
 require 'pry'
 def prime?(numbers)
   if numbers > 2 || (-1..numbers).to_a.any? {|i| numbers % i == 0}
-    return true
+    return false
   else
     return false
   end
